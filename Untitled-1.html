@@ -1,0 +1,4540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Muhammad Abdullah — Digital Marketing Specialist with 3+ years of experience in SEO, Google Ads, Meta Ads, content writing and digital marketing.">
+
+<meta name="keywords"
+content="Muhammad Abdullah, Digital Marketing Specialist, SEO Expert, Google Ads, Meta Ads, Content Writing, Local SEO, Digital Marketing Lahore">
+
+<meta name="author" content="Muhammad Abdullah">
+
+<meta name="theme-color" content="#050816">
+
+<title>Muhammad Abdullah | Digital Marketing Specialist</title>
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+  --bg:#050816;
+  --bg-2:#080d1d;
+
+  --card:rgba(255,255,255,.055);
+  --card-hover:rgba(255,255,255,.085);
+
+  --text:#f8fafc;
+  --muted:#94a3b8;
+  --muted-2:#cbd5e1;
+
+  --primary:#38bdf8;
+  --primary-2:#6366f1;
+  --purple:#a855f7;
+
+  --border:rgba(255,255,255,.09);
+  --border-hover:rgba(56,189,248,.35);
+
+  --shadow:0 25px 70px rgba(0,0,0,.35);
+
+  --container:1180px;
+
+  --ease:cubic-bezier(.2,.8,.2,1);
+
+  --accent:#38bdf8;
+  --accent2:#818cf8;
+  --accent3:#c084fc;
+
+  --glass:rgba(255,255,255,.055);
+  --glass-strong:rgba(255,255,255,.085);
+  --line:rgba(255,255,255,.11);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:100px;
+}
+
+body{
+  min-height:100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(56,189,248,.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(99,102,241,.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      var(--bg),
+      var(--bg-2)
+    );
+
+  color:var(--text);
+
+  font-family:
+    "Segoe UI",
+    Inter,
+    Arial,
+    sans-serif;
+
+  overflow-x:hidden;
+
+  line-height:1.6;
+}
+
+body{
+  background:#030611;
+}
+
+body::before{
+  content:"";
+
+  position:fixed;
+  inset:0;
+
+  pointer-events:none;
+
+  z-index:-9;
+
+  background:
+    radial-gradient(
+      circle at 50% -10%,
+      rgba(56,189,248,.12),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 0% 55%,
+      rgba(129,140,248,.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 100% 75%,
+      rgba(192,132,252,.07),
+      transparent 30%
+    );
+}
+
+a{
+  color:inherit;
+}
+
+button,
+a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+::selection{
+  background:rgba(56,189,248,.3);
+  color:#fff;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#03050d;
+}
+
+::-webkit-scrollbar-thumb{
+  background:
+    linear-gradient(
+      var(--primary),
+      var(--primary-2)
+    );
+
+  border-radius:20px;
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.background{
+  position:fixed;
+  inset:0;
+
+  pointer-events:none;
+
+  z-index:-10;
+
+  overflow:hidden;
+}
+
+.grid{
+  position:absolute;
+  inset:0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.025) 1px,
+      transparent 1px
+    );
+
+  background-size:60px 60px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black,
+      transparent 85%
+    );
+
+  opacity:.65;
+
+  animation:
+    gridDrift 24s linear infinite;
+}
+
+@keyframes gridDrift{
+  to{
+    transform:translate3d(60px,60px,0);
+  }
+}
+
+.orb{
+  position:absolute;
+
+  width:450px;
+  height:450px;
+
+  border-radius:50%;
+
+  filter:blur(90px);
+
+  opacity:.15;
+
+  animation:
+    orbFloat 12s ease-in-out infinite alternate;
+}
+
+.orb.one{
+  background:#38bdf8;
+  top:-180px;
+  left:-150px;
+}
+
+.orb.two{
+  background:#6366f1;
+  right:-180px;
+  top:25%;
+
+  animation-delay:-4s;
+}
+
+.orb.three{
+  background:#a855f7;
+  bottom:-220px;
+  left:35%;
+
+  animation-delay:-7s;
+}
+
+@keyframes orbFloat{
+  from{
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+  }
+
+  to{
+    transform:
+      translate3d(40px,-30px,0)
+      scale(1.1);
+  }
+}
+
+
+/* =========================================================
+   CURSOR GLOW
+========================================================= */
+
+.cursor-glow{
+  position:fixed;
+
+  width:350px;
+  height:350px;
+
+  border-radius:50%;
+
+  pointer-events:none;
+
+  z-index:-1;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(56,189,248,.08),
+      transparent 65%
+    );
+
+  transform:
+    translate(-50%,-50%);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container{
+  width:
+    min(
+      var(--container),
+      calc(100% - 40px)
+    );
+
+  margin:auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+
+  z-index:1000;
+
+  transition:
+    background .35s ease,
+    box-shadow .35s ease,
+    transform .35s ease;
+}
+
+header.scrolled{
+  background:
+    rgba(3,6,17,.72);
+
+  backdrop-filter:blur(20px);
+
+  -webkit-backdrop-filter:blur(20px);
+
+  border-bottom:
+    1px solid var(--border);
+
+  box-shadow:
+    0 18px 55px rgba(0,0,0,.35);
+}
+
+nav{
+  height:82px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+}
+
+.logo{
+  text-decoration:none;
+
+  font-size:24px;
+
+  font-weight:900;
+
+  letter-spacing:-1px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  transition:
+    transform .35s ease;
+}
+
+.logo:hover{
+  transform:
+    translateY(-2px);
+}
+
+.logo-mark{
+  width:38px;
+  height:38px;
+
+  border-radius:12px;
+
+  display:grid;
+
+  place-items:center;
+
+  color:#020617;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary),
+      var(--primary-2)
+    );
+
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.08),
+    0 10px 35px rgba(56,189,248,.28);
+
+  font-size:16px;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.logo-mark::after,
+.btn-primary::after,
+.social::after{
+  content:"";
+
+  position:absolute;
+
+  inset:-80%;
+
+  background:
+    linear-gradient(
+      115deg,
+      transparent 42%,
+      rgba(255,255,255,.35) 50%,
+      transparent 58%
+    );
+
+  transform:
+    translateX(-45%);
+
+  transition:
+    transform .8s ease;
+}
+
+.logo-mark:hover::after,
+.btn-primary:hover::after,
+.social:hover::after{
+  transform:
+    translateX(45%);
+}
+
+.logo span:last-child{
+  background:
+    linear-gradient(
+      90deg,
+      #fff,
+      #7dd3fc
+    );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+
+  color:transparent;
+}
+
+.nav-links{
+  display:flex;
+
+  align-items:center;
+
+  gap:7px;
+}
+
+.nav-links a{
+  position:relative;
+
+  text-decoration:none;
+
+  color:#cbd5e1;
+
+  padding:10px 14px;
+
+  border-radius:10px;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  transition:.3s var(--ease);
+
+  overflow:hidden;
+}
+
+.nav-links a::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  border-radius:inherit;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(56,189,248,.10),
+      rgba(129,140,248,.08)
+    );
+
+  opacity:0;
+
+  transform:scale(.85);
+
+  transition:.3s ease;
+
+  z-index:-1;
+}
+
+.nav-links a:hover::before,
+.nav-links a.active::before{
+  opacity:1;
+
+  transform:scale(1);
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+  color:#fff;
+
+  background:
+    rgba(255,255,255,.05);
+}
+
+.nav-links a.active::after{
+  content:"";
+
+  position:absolute;
+
+  left:14px;
+  right:14px;
+  bottom:5px;
+
+  height:2px;
+
+  border-radius:20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary),
+      var(--primary-2)
+    );
+}
+
+.menu-btn{
+  display:none;
+
+  width:44px;
+  height:44px;
+
+  border:
+    1px solid var(--border);
+
+  background:
+    rgba(255,255,255,.04);
+
+  color:#fff;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  font-size:18px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+  min-height:100vh;
+
+  display:flex;
+
+  align-items:center;
+
+  padding:
+    130px 0 80px;
+
+  position:relative;
+
+  overflow:clip;
+}
+
+.hero::before{
+  content:"";
+
+  position:absolute;
+
+  width:520px;
+  height:520px;
+
+  border:
+    1px solid rgba(56,189,248,.06);
+
+  border-radius:50%;
+
+  right:-180px;
+  top:8%;
+
+  box-shadow:
+    0 0 0 70px rgba(56,189,248,.015),
+    0 0 0 140px rgba(129,140,248,.01);
+
+  animation:
+    heroRing 14s linear infinite;
+}
+
+@keyframes heroRing{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+.hero-grid{
+  display:grid;
+
+  grid-template-columns:
+    1.15fr .85fr;
+
+  align-items:center;
+
+  gap:70px;
+}
+
+.hero-content{
+  position:relative;
+}
+
+.hero-badge{
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:9px;
+
+  padding:8px 13px;
+
+  border-radius:999px;
+
+  background:
+    rgba(56,189,248,.07);
+
+  border:
+    1px solid rgba(56,189,248,.18);
+
+  color:#bae6fd;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  margin-bottom:24px;
+
+  box-shadow:
+    0 0 30px rgba(56,189,248,.06),
+    inset 0 0 25px rgba(56,189,248,.03);
+
+  animation:
+    fadeUp .8s var(--ease) both;
+}
+
+.status-dot{
+  width:8px;
+  height:8px;
+
+  border-radius:50%;
+
+  background:#22c55e;
+
+  box-shadow:
+    0 0 0 5px rgba(34,197,94,.08),
+    0 0 15px rgba(34,197,94,.5);
+
+  animation:
+    pulse 2s infinite;
+}
+
+@keyframes pulse{
+  0%,100%{
+    transform:scale(1);
+    opacity:1;
+  }
+
+  50%{
+    transform:scale(.75);
+    opacity:.6;
+  }
+}
+
+.hero h1{
+  font-size:
+    clamp(
+      45px,
+      6vw,
+      78px
+    );
+
+  line-height:1.03;
+
+  letter-spacing:-4px;
+
+  margin-bottom:20px;
+
+  text-wrap:balance;
+
+  text-shadow:
+    0 10px 45px rgba(0,0,0,.25);
+
+  animation:
+    fadeUp .8s .08s var(--ease) both;
+}
+
+.gradient-name{
+  display:inline-block;
+
+  background:
+    linear-gradient(
+      90deg,
+      #38bdf8,
+      #818cf8,
+      #c084fc,
+      #38bdf8
+    );
+
+  background-size:300% auto;
+
+  -webkit-background-clip:text;
+  background-clip:text;
+
+  color:transparent;
+
+  animation:
+    gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove{
+  to{
+    background-position:
+      300% center;
+  }
+}
+
+.hero-subtitle{
+  max-width:700px;
+
+  font-size:
+    clamp(
+      20px,
+      2.5vw,
+      28px
+    );
+
+  color:#e2e8f0;
+
+  font-weight:700;
+
+  margin-bottom:17px;
+
+  animation:
+    fadeUp .8s .16s var(--ease) both;
+}
+
+.typing{
+  color:var(--primary);
+}
+
+.cursor{
+  color:var(--primary);
+
+  animation:
+    blink .8s infinite;
+}
+
+@keyframes blink{
+  50%{
+    opacity:0;
+  }
+}
+
+.hero-description{
+  max-width:680px;
+
+  color:var(--muted);
+
+  font-size:
+    clamp(
+      15px,
+      1.3vw,
+      18px
+    );
+
+  line-height:1.9;
+
+  margin-bottom:30px;
+
+  animation:
+    fadeUp .8s .24s var(--ease) both;
+}
+
+.hero-buttons{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  animation:
+    fadeUp .8s .32s var(--ease) both;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn{
+  position:relative;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:9px;
+
+  padding:13px 20px;
+
+  border-radius:13px;
+
+  text-decoration:none;
+
+  font-size:14px;
+
+  font-weight:800;
+
+  overflow:hidden;
+
+  isolation:isolate;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.12);
+
+  transition:
+    transform .3s var(--ease),
+    box-shadow .3s var(--ease),
+    border-color .3s var(--ease);
+}
+
+.btn::before{
+  content:"";
+
+  position:absolute;
+
+  width:80px;
+  height:200%;
+
+  background:
+    rgba(255,255,255,.22);
+
+  transform:
+    rotate(25deg)
+    translateX(-160px);
+
+  transition:
+    .7s var(--ease);
+}
+
+.btn:hover::before{
+  transform:
+    rotate(25deg)
+    translateX(260px);
+}
+
+.btn:active{
+  transform:
+    translateY(-1px)
+    scale(.98)!important;
+}
+
+.btn i{
+  transition:
+    transform .3s ease;
+}
+
+.btn:hover i{
+  transform:
+    translateX(3px)
+    scale(1.08);
+}
+
+.btn-primary{
+  color:#020617;
+
+  background:
+    linear-gradient(
+      135deg,
+      #67e8f9,
+      #38bdf8,
+      #818cf8
+    );
+
+  box-shadow:
+    0 14px 40px rgba(56,189,248,.22),
+    inset 0 1px rgba(255,255,255,.35);
+}
+
+.btn-primary:hover{
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 18px 45px rgba(56,189,248,.3);
+}
+
+.btn-secondary{
+  border:
+    1px solid var(--border);
+
+  background:
+    rgba(255,255,255,.045);
+
+  color:#fff;
+
+  backdrop-filter:
+    blur(10px);
+
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.06),
+    0 12px 30px rgba(0,0,0,.15);
+}
+
+.btn-secondary:hover{
+  transform:
+    translateY(-4px);
+
+  border-color:
+    var(--border-hover);
+
+  background:
+    rgba(255,255,255,.08);
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual{
+  display:flex;
+
+  justify-content:center;
+
+  position:relative;
+
+  animation:
+    fadeIn 1s .3s var(--ease) both;
+}
+
+.profile-card{
+  width:
+    min(
+      390px,
+      100%
+    );
+
+  padding:15px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.09),
+      rgba(255,255,255,.025)
+    );
+
+  backdrop-filter:
+    blur(20px);
+
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.45),
+    0 0 80px rgba(56,189,248,.06);
+
+  transform:
+    perspective(1000px)
+    rotateY(-6deg)
+    rotateX(3deg);
+
+  transition:
+    .5s var(--ease);
+
+  position:relative;
+}
+
+.profile-card::before{
+  content:"";
+
+  position:absolute;
+
+  inset:-1px;
+
+  border-radius:30px;
+
+  padding:1px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(56,189,248,.5),
+      transparent 35%,
+      transparent 65%,
+      rgba(192,132,252,.35)
+    );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+
+  -webkit-mask-composite:xor;
+
+  mask-composite:exclude;
+
+  pointer-events:none;
+
+  opacity:.65;
+}
+
+.profile-card:hover{
+  transform:
+    perspective(1000px)
+    rotateY(0)
+    rotateX(0)
+    translateY(-8px);
+}
+
+.profile-inner{
+  min-height:450px;
+
+  border-radius:22px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  padding:35px;
+
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(56,189,248,.15),
+      transparent 40%
+    ),
+    rgba(3,7,18,.75);
+
+  border:
+    1px solid rgba(255,255,255,.05);
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.profile-inner::after{
+  content:"";
+
+  position:absolute;
+
+  width:220px;
+  height:220px;
+
+  border-radius:50%;
+
+  border:
+    1px solid rgba(56,189,248,.08);
+
+  animation:
+    orbit 12s linear infinite;
+}
+
+@keyframes orbit{
+  to{
+    transform:
+      rotate(360deg)
+      translateX(18px)
+      rotate(-360deg);
+  }
+}
+
+.profile-icon{
+  width:125px;
+  height:125px;
+
+  border-radius:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  font-size:48px;
+
+  color:#fff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(56,189,248,.2),
+      rgba(99,102,241,.2)
+    );
+
+  border:
+    1px solid rgba(56,189,248,.25);
+
+  box-shadow:
+    0 0 0 15px rgba(56,189,248,.025),
+    0 0 70px rgba(56,189,248,.12);
+
+  margin-bottom:25px;
+
+  position:relative;
+
+  z-index:1;
+
+  animation:
+    profileFloat 5s ease-in-out infinite;
+}
+
+
+
+.profile-photo{
+  overflow:hidden;
+  padding:0;
+  background:#0b1224;
+}
+
+.profile-photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center 20%;
+  border-radius:50%;
+}
+
+@keyframes profileFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+}
+
+.profile-inner h3{
+  font-size:25px;
+
+  margin-bottom:7px;
+
+  position:relative;
+
+  z-index:2;
+}
+
+.profile-inner p{
+  color:var(--muted);
+
+  font-size:14px;
+
+  position:relative;
+
+  z-index:2;
+}
+
+.profile-tags{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:7px;
+
+  margin-top:22px;
+
+  position:relative;
+
+  z-index:2;
+}
+
+.profile-tags span{
+  padding:6px 10px;
+
+  border-radius:999px;
+
+  font-size:11px;
+
+  font-weight:700;
+
+  color:#cbd5e1;
+
+  background:
+    rgba(255,255,255,.05);
+
+  border:
+    1px solid var(--border);
+
+  transition:.3s ease;
+}
+
+.profile-tags span:hover{
+  transform:translateY(-3px);
+
+  border-color:
+    rgba(56,189,248,.3);
+
+  background:
+    rgba(56,189,248,.08);
+
+  color:#fff;
+}
+
+.floating-card{
+  position:absolute;
+
+  padding:12px 15px;
+
+  background:
+    rgba(7,12,28,.8);
+
+  border:
+    1px solid var(--border);
+
+  backdrop-filter:
+    blur(15px);
+
+  border-radius:13px;
+
+  font-size:12px;
+
+  font-weight:700;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.38),
+    inset 0 1px rgba(255,255,255,.08);
+
+  animation:
+    floatCard 4s ease-in-out infinite;
+
+  z-index:4;
+}
+
+.floating-card.one{
+  top:12%;
+  left:-20px;
+}
+
+.floating-card.two{
+  right:-20px;
+  bottom:18%;
+
+  animation-delay:-2s;
+}
+
+.floating-card i{
+  color:var(--primary);
+
+  margin-right:5px;
+}
+
+@keyframes floatCard{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+}
+
+
+/* =========================================================
+   SOCIALS
+========================================================= */
+
+.socials{
+  display:flex;
+
+  gap:10px;
+
+  margin-top:28px;
+
+  animation:
+    fadeUp .8s .4s var(--ease) both;
+}
+
+.social{
+  width:43px;
+  height:43px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  color:#cbd5e1;
+
+  background:
+    rgba(255,255,255,.045);
+
+  border:
+    1px solid var(--border);
+
+  transition:.3s var(--ease);
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.social:hover{
+  color:#fff;
+
+  border-color:
+    rgba(56,189,248,.3);
+
+  background:
+    rgba(56,189,248,.1);
+
+  transform:
+    translateY(-5px)
+    rotate(-3deg);
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+section{
+  padding:110px 0;
+
+  position:relative;
+
+  scroll-margin-top:90px;
+}
+
+section::before{
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:50%;
+
+  width:min(900px,90%);
+
+  height:1px;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(56,189,248,.12),
+      transparent
+    );
+}
+
+section:nth-of-type(even)::after{
+  content:"";
+
+  position:absolute;
+
+  bottom:0;
+
+  left:50%;
+
+  width:80px;
+
+  height:1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--primary),
+      transparent
+    );
+
+  transform:
+    translateX(-50%);
+
+  opacity:.35;
+}
+
+.section-heading{
+  max-width:700px;
+
+  margin-bottom:50px;
+
+  position:relative;
+}
+
+.eyebrow{
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  color:var(--primary);
+
+  text-transform:uppercase;
+
+  letter-spacing:2px;
+
+  font-size:11px;
+
+  font-weight:900;
+
+  margin-bottom:12px;
+
+  filter:
+    drop-shadow(
+      0 0 14px rgba(56,189,248,.18)
+    );
+}
+
+.eyebrow::before{
+  content:"";
+
+  width:25px;
+  height:2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary),
+      var(--primary-2)
+    );
+}
+
+.section-heading h2{
+  font-size:
+    clamp(
+      32px,
+      4vw,
+      48px
+    );
+
+  line-height:1.1;
+
+  letter-spacing:-2px;
+
+  margin-bottom:15px;
+
+  text-wrap:balance;
+}
+
+.section-heading p{
+  color:var(--muted);
+
+  font-size:16px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid{
+  display:grid;
+
+  grid-template-columns:
+    .85fr 1.15fr;
+
+  gap:30px;
+
+  align-items:stretch;
+}
+
+.about-card{
+  position:relative;
+
+  padding:35px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.065),
+      rgba(255,255,255,.025)
+    );
+
+  backdrop-filter:
+    blur(15px);
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,.18),
+    inset 0 1px rgba(255,255,255,.035);
+
+  overflow:hidden;
+
+  transition:.4s var(--ease);
+
+  will-change:transform;
+}
+
+.about-card:hover{
+  transform:translateY(-7px);
+
+  border-color:
+    var(--border-hover);
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.28),
+    0 0 35px rgba(56,189,248,.045);
+}
+
+.about-card::before{
+  content:"";
+
+  position:absolute;
+
+  width:180px;
+  height:180px;
+
+  top:-100px;
+  right:-80px;
+
+  border-radius:50%;
+
+  background:
+    rgba(56,189,248,.08);
+
+  filter:blur(30px);
+}
+
+.about-card h3{
+  font-size:24px;
+
+  margin-bottom:15px;
+}
+
+.about-card p{
+  color:var(--muted-2);
+
+  line-height:1.9;
+}
+
+.about-points{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:14px;
+
+  margin-top:28px;
+}
+
+.about-point{
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  padding:12px;
+
+  border-radius:12px;
+
+  background:
+    rgba(255,255,255,.035);
+
+  border:
+    1px solid rgba(255,255,255,.05);
+
+  color:#cbd5e1;
+
+  font-size:13px;
+
+  font-weight:600;
+
+  transition:.3s ease;
+}
+
+.about-point:hover{
+  transform:
+    translateX(5px);
+
+  border-color:
+    rgba(56,189,248,.18);
+
+  background:
+    rgba(56,189,248,.055);
+}
+
+.about-point i{
+  color:var(--primary);
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats{
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:15px;
+}
+
+.stat{
+  padding:25px;
+
+  border-radius:20px;
+
+  border:
+    1px solid var(--border);
+
+  background:
+    rgba(255,255,255,.035);
+
+  transition:.35s var(--ease);
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,.18),
+    inset 0 1px rgba(255,255,255,.035);
+}
+
+.stat:hover{
+  transform:translateY(-6px);
+
+  border-color:
+    var(--border-hover);
+
+  background:
+    rgba(255,255,255,.06);
+}
+
+.stat i{
+  color:var(--primary);
+
+  font-size:22px;
+
+  margin-bottom:15px;
+}
+
+.stat strong{
+  display:block;
+
+  font-size:30px;
+
+  margin-bottom:2px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff,
+      #7dd3fc,
+      #a78bfa
+    );
+
+  -webkit-background-clip:text;
+
+  background-clip:text;
+
+  color:transparent;
+}
+
+.stat span{
+  color:var(--muted);
+
+  font-size:12px;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:20px;
+}
+
+.skill-card{
+  padding:25px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:20px;
+
+  background:
+    rgba(255,255,255,.035);
+
+  transition:.4s var(--ease);
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,.18),
+    inset 0 1px rgba(255,255,255,.035);
+
+  position:relative;
+
+  overflow:hidden;
+
+  will-change:transform;
+}
+
+.skill-card:hover{
+  transform:translateY(-6px);
+
+  border-color:
+    var(--border-hover);
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.28),
+    0 0 35px rgba(56,189,248,.045);
+}
+
+.skill-card::before{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  top:0;
+
+  width:3px;
+
+  height:0;
+
+  background:
+    linear-gradient(
+      #38bdf8,
+      #818cf8
+    );
+
+  transition:
+    height .45s ease;
+}
+
+.skill-card:hover::before{
+  height:100%;
+}
+
+.skill-top{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-bottom:12px;
+}
+
+.skill-name{
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  font-weight:800;
+}
+
+.skill-name i{
+  color:var(--primary);
+}
+
+.skill-percent{
+  color:var(--primary);
+
+  font-size:13px;
+
+  font-weight:800;
+}
+
+.skill-bar{
+  height:8px;
+
+  background:#111827;
+
+  border-radius:99px;
+
+  overflow:hidden;
+}
+
+.skill-fill{
+  width:0;
+
+  height:100%;
+
+  border-radius:99px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary),
+      var(--primary-2)
+    );
+
+  box-shadow:
+    0 0 15px rgba(56,189,248,.2);
+
+  transition:
+    width 1.5s var(--ease);
+
+  position:relative;
+}
+
+.skill-fill::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.38),
+      transparent
+    );
+
+  transform:
+    translateX(-100%);
+
+  animation:
+    barShine 2.8s ease-in-out infinite;
+}
+
+@keyframes barShine{
+  to{
+    transform:
+      translateX(100%);
+  }
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+  gap:25px;
+
+  perspective:1200px;
+}
+
+.project-card{
+  position:relative;
+
+  overflow:hidden;
+
+  border-radius:24px;
+
+  border:
+    1px solid var(--border);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.065),
+      rgba(255,255,255,.025)
+    );
+
+  backdrop-filter:
+    blur(15px);
+
+  transition:
+    transform .45s var(--ease),
+    border-color .45s var(--ease),
+    box-shadow .45s var(--ease);
+
+  transform-style:preserve-3d;
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,.18),
+    inset 0 1px rgba(255,255,255,.035);
+}
+
+.project-card:hover{
+  transform:
+    translateY(-10px);
+
+  border-color:
+    var(--border-hover);
+
+  box-shadow:
+    0 25px 65px rgba(0,0,0,.3);
+}
+
+.project-card::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    radial-gradient(
+      500px circle at
+      var(--mx,50%)
+      var(--my,0%),
+      rgba(56,189,248,.10),
+      transparent 38%
+    );
+
+  opacity:0;
+
+  transition:
+    opacity .35s ease;
+
+  pointer-events:none;
+
+  z-index:3;
+}
+
+.project-card:hover::before{
+  opacity:1;
+}
+
+
+/* =========================================================
+   PROJECT VISUAL
+========================================================= */
+
+.project-image{
+  position:relative;
+
+  width:100%;
+
+  aspect-ratio:16 / 9;
+
+  overflow:hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(56,189,248,.12),
+      transparent 55%
+    ),
+    #070b18;
+
+  display:grid;
+
+  place-items:center;
+}
+
+.project-image::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(56,189,248,.06),
+      transparent 45%,
+      rgba(192,132,252,.05)
+    );
+
+  z-index:1;
+
+  pointer-events:none;
+}
+
+.project-image::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(3,7,18,.7),
+      transparent 50%
+    );
+
+  pointer-events:none;
+
+  z-index:2;
+}
+
+.project-icon{
+  font-size:70px;
+
+  color:#38bdf8;
+
+  filter:
+    drop-shadow(
+      0 0 30px rgba(56,189,248,.35)
+    );
+
+  position:relative;
+
+  z-index:2;
+
+  transition:
+    transform .5s var(--ease),
+    color .4s ease;
+}
+
+.project-card:hover .project-icon{
+  transform:
+    scale(1.12)
+    translateY(-5px);
+
+  color:#7dd3fc;
+}
+
+.project-number{
+  position:absolute;
+
+  top:16px;
+  left:16px;
+
+  z-index:4;
+
+  padding:7px 10px;
+
+  border-radius:999px;
+
+  background:
+    rgba(2,6,23,.7);
+
+  backdrop-filter:
+    blur(10px);
+
+  border:
+    1px solid rgba(255,255,255,.1);
+
+  font-size:11px;
+
+  font-weight:800;
+
+  color:#cbd5e1;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   PROJECT CONTENT
+========================================================= */
+
+.project-content{
+  padding:25px;
+}
+
+.project-content h3{
+  font-size:21px;
+
+  line-height:1.35;
+
+  margin-bottom:11px;
+
+  transition:
+    color .3s ease,
+    transform .3s ease;
+}
+
+.project-card:hover
+.project-content h3{
+  color:#fff;
+
+  transform:
+    translateX(3px);
+}
+
+.project-content p{
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.75;
+
+  margin-bottom:18px;
+}
+
+.tags{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:7px;
+
+  margin-bottom:20px;
+}
+
+.tags span{
+  padding:5px 9px;
+
+  border-radius:7px;
+
+  color:#bae6fd;
+
+  background:
+    rgba(56,189,248,.06);
+
+  border:
+    1px solid rgba(56,189,248,.12);
+
+  font-size:10px;
+
+  font-weight:800;
+
+  transition:.25s ease;
+}
+
+.tags span:hover{
+  transform:
+    translateY(-2px);
+
+  background:
+    rgba(56,189,248,.11);
+
+  border-color:
+    rgba(56,189,248,.25);
+
+  color:#fff;
+}
+
+.project-buttons{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:9px;
+}
+
+.project-buttons .btn{
+  padding:10px 13px;
+
+  font-size:12px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-box{
+  position:relative;
+
+  overflow:hidden;
+
+  padding:60px 45px;
+
+  border-radius:30px;
+
+  border:
+    1px solid var(--border);
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(56,189,248,.13),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(99,102,241,.13),
+      transparent 35%
+    ),
+    rgba(255,255,255,.035);
+
+  text-align:center;
+
+  box-shadow:
+    0 30px 100px rgba(0,0,0,.28),
+    0 0 80px rgba(56,189,248,.035),
+    inset 0 1px rgba(255,255,255,.06);
+}
+
+.contact-box::before{
+  content:"";
+
+  position:absolute;
+
+  width:300px;
+  height:300px;
+
+  left:50%;
+  top:50%;
+
+  transform:
+    translate(-50%,-50%);
+
+  border-radius:50%;
+
+  border:
+    1px solid rgba(56,189,248,.07);
+
+  box-shadow:
+    0 0 0 70px rgba(56,189,248,.015),
+    0 0 0 140px rgba(56,189,248,.01);
+
+  pointer-events:none;
+}
+
+.contact-box h2{
+  position:relative;
+
+  font-size:
+    clamp(
+      32px,
+      4vw,
+      50px
+    );
+
+  line-height:1.1;
+
+  margin-bottom:15px;
+
+  letter-spacing:-2px;
+
+  text-wrap:balance;
+}
+
+.contact-box > p{
+  position:relative;
+
+  max-width:650px;
+
+  margin:
+    0 auto 25px;
+
+  color:var(--muted);
+}
+
+.email-link{
+  position:relative;
+
+  display:inline-block;
+
+  color:#7dd3fc;
+
+  font-size:18px;
+
+  font-weight:800;
+
+  text-decoration:none;
+
+  margin-bottom:25px;
+
+  padding:8px 14px;
+
+  border-radius:12px;
+
+  background:
+    rgba(255,255,255,.035);
+
+  border:
+    1px solid rgba(255,255,255,.06);
+
+  transition:.3s;
+}
+
+.email-link:hover{
+  color:#fff;
+}
+
+.contact-buttons{
+  position:relative;
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+  padding:30px 0;
+
+  border-top:
+    1px solid var(--border);
+
+  color:#64748b;
+
+  font-size:13px;
+
+  background:
+    rgba(0,0,0,.12);
+
+  backdrop-filter:
+    blur(10px);
+}
+
+.footer-content{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:20px;
+}
+
+.footer-content strong{
+  color:#cbd5e1;
+}
+
+.footer-socials{
+  display:flex;
+
+  gap:8px;
+}
+
+.footer-socials a{
+  width:35px;
+  height:35px;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:9px;
+
+  color:#94a3b8;
+
+  background:
+    rgba(255,255,255,.035);
+
+  border:
+    1px solid var(--border);
+
+  text-decoration:none;
+
+  transition:.3s;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.footer-socials a:hover{
+  color:#fff;
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    var(--border-hover);
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal{
+  opacity:0;
+
+  transform:
+    translateY(45px)
+    scale(.98);
+
+  transition:
+    opacity .8s var(--ease),
+    transform .8s var(--ease);
+}
+
+.reveal.visible{
+  opacity:1;
+
+  transform:
+    translateY(0)
+    scale(1);
+}
+
+.reveal-left{
+  opacity:0;
+
+  transform:
+    translateX(-45px);
+
+  transition:
+    opacity .8s var(--ease),
+    transform .8s var(--ease);
+}
+
+.reveal-left.visible{
+  opacity:1;
+
+  transform:
+    translateX(0);
+}
+
+.reveal-right{
+  opacity:0;
+
+  transform:
+    translateX(45px);
+
+  transition:
+    opacity .8s var(--ease),
+    transform .8s var(--ease);
+}
+
+.reveal-right.visible{
+  opacity:1;
+
+  transform:
+    translateX(0);
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.top-btn{
+  position:fixed;
+
+  right:22px;
+  bottom:22px;
+
+  width:45px;
+  height:45px;
+
+  display:grid;
+
+  place-items:center;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:13px;
+
+  background:
+    rgba(7,12,28,.8);
+
+  backdrop-filter:
+    blur(15px);
+
+  color:#fff;
+
+  cursor:pointer;
+
+  z-index:900;
+
+  opacity:0;
+
+  visibility:hidden;
+
+  transform:
+    translateY(20px);
+
+  transition:.35s var(--ease);
+}
+
+.top-btn.show{
+  opacity:1;
+
+  visibility:visible;
+
+  transform:
+    translateY(0);
+}
+
+.top-btn:hover{
+  background:
+    rgba(56,189,248,.12);
+
+  border-color:
+    var(--border-hover);
+
+  transform:
+    translateY(-4px);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+
+    transform:
+      translateY(25px);
+  }
+
+  to{
+    opacity:1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:950px){
+
+  .hero-grid{
+    grid-template-columns:1fr;
+
+    text-align:center;
+  }
+
+  .hero-content{
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+  }
+
+  .hero-description{
+    max-width:700px;
+  }
+
+  .hero-visual{
+    order:2;
+  }
+
+  .profile-card{
+    width:
+      min(
+        450px,
+        100%
+      );
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE NAV
+========================================================= */
+
+@media(max-width:760px){
+
+  .container{
+    width:
+      min(
+        100% - 30px,
+        var(--container)
+      );
+  }
+
+  nav{
+    height:72px;
+  }
+
+  .menu-btn{
+    display:grid;
+
+    place-items:center;
+  }
+
+  .nav-links{
+    position:absolute;
+
+    top:76px;
+
+    left:15px;
+    right:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    padding:10px;
+
+    background:
+      rgba(5,8,22,.94);
+
+    backdrop-filter:
+      blur(20px);
+
+    border:
+      1px solid var(--border);
+
+    border-radius:18px;
+
+    box-shadow:
+      0 25px 60px rgba(0,0,0,.4);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:
+      translateY(-10px)
+      scale(.98);
+
+    transition:.3s var(--ease);
+  }
+
+  .nav-links.open{
+    opacity:1;
+
+    visibility:visible;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+
+  .nav-links a{
+    padding:13px;
+  }
+
+  .nav-links a.active::after{
+    display:none;
+  }
+
+  .hero{
+    padding-top:115px;
+  }
+
+  .hero::before{
+    width:300px;
+    height:300px;
+
+    right:-170px;
+
+    top:12%;
+  }
+
+  .hero h1{
+    letter-spacing:-2.5px;
+  }
+
+  .hero-buttons{
+    width:100%;
+
+    justify-content:center;
+  }
+
+  .hero-buttons .btn{
+    flex:1;
+
+    min-width:145px;
+  }
+
+  .floating-card.one{
+    left:-8px;
+  }
+
+  .floating-card.two{
+    right:-8px;
+  }
+
+  section{
+    padding:80px 0;
+  }
+
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-points{
+    grid-template-columns:1fr;
+  }
+
+  .contact-box{
+    padding:
+      45px 20px;
+  }
+
+  .footer-content{
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+  .profile-card{
+    transform:none!important;
+  }
+
+  .project-image{
+    aspect-ratio:16/10;
+  }
+
+  .project-content{
+    padding:22px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media(max-width:480px){
+
+  .container{
+    width:
+      calc(100% - 24px);
+  }
+
+  section{
+    padding:72px 0;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero-subtitle{
+    font-size:19px;
+  }
+
+  .hero-description{
+    font-size:14px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+  }
+
+  .profile-card{
+    width:
+      calc(100% - 20px);
+  }
+
+  .profile-inner{
+    min-height:350px;
+
+    padding:
+      25px 18px;
+  }
+
+  .profile-icon{
+    width:105px;
+    height:105px;
+
+    font-size:40px;
+  }
+
+  .floating-card{
+    display:none;
+  }
+
+  .project-content{
+    padding:20px;
+  }
+
+  .project-buttons{
+    flex-direction:column;
+  }
+
+  .project-buttons .btn{
+    width:100%;
+  }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media(hover:none){
+
+  .project-card:hover,
+  .about-card:hover,
+  .stat:hover,
+  .skill-card:hover{
+    transform:none;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+    scroll-behavior:auto!important;
+
+    animation-duration:.01ms!important;
+
+    animation-iteration-count:1!important;
+
+    transition-duration:.01ms!important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right{
+    opacity:1;
+
+    transform:none;
+  }
+
+  .background .grid,
+  .hero::before,
+  .profile-inner::after,
+  .skill-fill::after{
+    animation:none!important;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+<div class="background">
+
+  <div class="grid"></div>
+
+  <div class="orb one"></div>
+  <div class="orb two"></div>
+  <div class="orb three"></div>
+
+</div>
+
+<div class="cursor-glow"></div>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header id="header">
+
+  <div class="container">
+
+    <nav>
+
+      <a href="#home" class="logo">
+
+        <span class="logo-mark">
+          <i class="fa-solid fa-chart-line"></i>
+        </span>
+
+        <span>Abdullah</span>
+
+      </a>
+
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open navigation menu"
+      >
+
+        <i class="fa-solid fa-bars"></i>
+
+      </button>
+
+
+      <div class="nav-links" id="navLinks">
+
+        <a href="#home" class="active">
+          Home
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#skills">
+          Skills
+        </a>
+
+        <a href="#projects">
+          Projects
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <div class="hero-grid">
+
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+
+          <span class="status-dot"></span>
+
+          Available for Digital Marketing Projects
+
+        </div>
+
+
+        <h1>
+
+          Hi, I'm
+
+          <span class="gradient-name">
+            Muhammad Abdullah
+          </span>
+
+        </h1>
+
+
+        <div class="hero-subtitle">
+
+          I'm a
+          <span class="typing"></span>
+          <span class="cursor">|</span>
+
+        </div>
+
+
+        <p class="hero-description">
+
+          I help businesses grow online through SEO,
+          Google Ads, Meta Ads, content writing and
+          performance-focused digital marketing strategies
+          designed to improve visibility, traffic and leads.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a
+            href="https://wa.me/923207002101"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            Hire Me
+
+          </a>
+
+
+          <a
+            href="mailto:mirzaabdullah8520@gmail.com"
+            class="btn btn-secondary"
+          >
+
+            <i class="fa-solid fa-envelope"></i>
+
+            Email Me
+
+          </a>
+
+
+          <a
+            href="#projects"
+            class="btn btn-secondary"
+          >
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+            View Campaigns
+
+          </a>
+
+        </div>
+
+
+        <div class="socials">
+
+          <a
+            class="social"
+            href="mailto:mirzaabdullah8520@gmail.com"
+            aria-label="Email"
+          >
+
+            <i class="fa-solid fa-envelope"></i>
+
+          </a>
+
+
+          <a
+            class="social"
+            href="https://wa.me/923207002101"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+          </a>
+
+
+          <a
+            class="social"
+            href="#projects"
+            aria-label="Projects"
+          >
+
+            <i class="fa-solid fa-bullhorn"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERO VISUAL -->
+
+      <div class="hero-visual">
+
+        <div class="floating-card one">
+
+          <i class="fa-solid fa-chart-line"></i>
+
+          SEO & Growth
+
+        </div>
+
+
+        <div class="profile-card">
+
+          <div class="profile-inner">
+
+            <div class="profile-icon profile-photo">
+
+              <img
+                src="assets/profile.jpg"
+                alt="Muhammad Abdullah — Digital Marketing Specialist"
+              >
+
+            </div>
+
+
+            <h3>
+              Muhammad Abdullah
+            </h3>
+
+
+            <p>
+              Digital Marketing Specialist
+            </p>
+
+
+            <div class="profile-tags">
+
+              <span>SEO</span>
+              <span>Google Ads</span>
+              <span>Meta Ads</span>
+              <span>Content</span>
+              <span>Local SEO</span>
+              <span>Analytics</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="floating-card two">
+
+          <i class="fa-solid fa-rocket"></i>
+
+          Growing Brands
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="eyebrow">
+        About Me
+      </div>
+
+      <h2>
+
+        Turning marketing strategies into
+        <span class="gradient-name">
+          digital growth.
+        </span>
+
+      </h2>
+
+      <p>
+
+        A digital marketing professional focused on
+        helping businesses improve online visibility,
+        attract the right audience and generate meaningful
+        results.
+
+      </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+      <div class="about-card reveal-left">
+
+        <h3>
+          Who I Am
+        </h3>
+
+        <p>
+
+          I'm Muhammad Abdullah, a Digital Marketing
+          Specialist with 3+ years of experience working
+          on digital marketing projects from 2023 to 2026.
+
+          <br><br>
+
+          My work focuses on SEO, local SEO, Google Ads,
+          Meta Ads, content writing, Google Business
+          visibility and digital growth strategies.
+
+          <br><br>
+
+          I have worked with businesses across different
+          industries, helping them strengthen their online
+          presence and reach potential customers through
+          search engines and paid advertising platforms.
+
+        </p>
+
+
+        <div class="about-points">
+
+          <div class="about-point">
+
+            <i class="fa-solid fa-check"></i>
+
+            SEO & Local SEO
+
+          </div>
+
+
+          <div class="about-point">
+
+            <i class="fa-solid fa-check"></i>
+
+            Google Ads
+
+          </div>
+
+
+          <div class="about-point">
+
+            <i class="fa-solid fa-check"></i>
+
+            Meta Ads
+
+          </div>
+
+
+          <div class="about-point">
+
+            <i class="fa-solid fa-check"></i>
+
+            Content Writing
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="stats reveal-right">
+
+        <div class="stat">
+
+          <i class="fa-solid fa-calendar-check"></i>
+
+          <strong>
+            3+
+          </strong>
+
+          <span>
+            Years Experience
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <i class="fa-solid fa-briefcase"></i>
+
+          <strong>
+            9+
+          </strong>
+
+          <span>
+            Featured Projects
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+          <strong>
+            SEO
+          </strong>
+
+          <span>
+            Search Growth
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <i class="fa-solid fa-bullhorn"></i>
+
+          <strong>
+            Ads
+          </strong>
+
+          <span>
+            Paid Advertising
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section id="experience">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="eyebrow">
+        Experience
+      </div>
+
+      <h2>
+
+        Digital marketing
+        <span class="gradient-name">
+          experience.
+        </span>
+
+      </h2>
+
+      <p>
+
+        Professional experience focused on search,
+        advertising, content and online business growth.
+
+      </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+      <div class="about-card reveal-left">
+
+        <h3>
+          WeProms Digital — Lahore
+        </h3>
+
+        <p>
+
+          <strong style="color:#fff;">
+            Digital Marketing
+          </strong>
+
+          <br>
+
+          2023 — 2026
+
+          <br><br>
+
+          Worked on digital marketing activities including
+          SEO, Google search visibility, paid advertising,
+          content marketing and online growth campaigns.
+
+        </p>
+
+      </div>
+
+
+      <div class="stats reveal-right">
+
+        <div class="stat">
+
+          <i class="fa-solid fa-google"></i>
+
+          <strong>
+            Google
+          </strong>
+
+          <span>
+            Search & Ads
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <i class="fa-brands fa-meta"></i>
+
+          <strong>
+            Meta
+          </strong>
+
+          <span>
+            Social Advertising
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <i class="fa-solid fa-pen-nib"></i>
+
+          <strong>
+            Content
+          </strong>
+
+          <span>
+            Content Writing
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <i class="fa-solid fa-location-dot"></i>
+
+          <strong>
+            Local
+          </strong>
+
+          <span>
+            Local SEO
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="eyebrow">
+        My Skills
+      </div>
+
+      <h2>
+
+        Digital marketing
+        <span class="gradient-name">
+          toolkit.
+        </span>
+
+      </h2>
+
+      <p>
+
+        A practical skill set focused on search visibility,
+        paid advertising, content and digital growth.
+
+      </p>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <div class="skill-name">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            SEO
+
+          </div>
+
+          <span class="skill-percent">
+            90%
+          </span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div
+            class="skill-fill"
+            data-width="90%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <div class="skill-name">
+
+            <i class="fa-brands fa-google"></i>
+
+            Google Ads
+
+          </div>
+
+          <span class="skill-percent">
+            85%
+          </span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div
+            class="skill-fill"
+            data-width="85%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <div class="skill-name">
+
+            <i class="fa-brands fa-meta"></i>
+
+            Meta Ads
+
+          </div>
+
+          <span class="skill-percent">
+            85%
+          </span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div
+            class="skill-fill"
+            data-width="85%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <div class="skill-name">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Local SEO
+
+          </div>
+
+          <span class="skill-percent">
+            90%
+          </span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div
+            class="skill-fill"
+            data-width="90%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <div class="skill-name">
+
+            <i class="fa-solid fa-pen-nib"></i>
+
+            Content Writing
+
+          </div>
+
+          <span class="skill-percent">
+            85%
+          </span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div
+            class="skill-fill"
+            data-width="85%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <div class="skill-name">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            Analytics & Strategy
+
+          </div>
+
+          <span class="skill-percent">
+            80%
+          </span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div
+            class="skill-fill"
+            data-width="80%"
+          ></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section id="projects">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="eyebrow">
+        Featured Work
+      </div>
+
+      <h2>
+
+        Digital marketing
+        <span class="gradient-name">
+          projects.
+        </span>
+
+      </h2>
+
+      <p>
+
+        Selected websites and digital marketing projects
+        across home services, e-commerce, healthcare,
+        immigration, transportation and tourism.
+
+      </p>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+      <!-- PROJECT 01 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            01 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-house-chimney"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            🏠 Landmark Remodeling Company
+          </h3>
+
+          <p>
+
+            Digital marketing project for a home remodeling
+            business. Focused on improving online visibility,
+            local search presence, lead generation and
+            customer acquisition through search marketing.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>SEO</span>
+            <span>Local SEO</span>
+            <span>Google Ads</span>
+            <span>Content</span>
+            <span>Lead Generation</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://landmarkremodelingcompany.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 02 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            02 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-house-circle-check"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            🏠 Evergreen Roofing
+          </h3>
+
+          <p>
+
+            Digital marketing project for a roofing company,
+            with emphasis on local search visibility,
+            service-based keywords, Google presence and
+            lead-focused advertising.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>SEO</span>
+            <span>Local SEO</span>
+            <span>Google Ads</span>
+            <span>PPC</span>
+            <span>Lead Generation</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://evergreenroofing.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 03 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            03 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-kitchen-set"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            🔪 Hisbenew — E-Commerce
+          </h3>
+
+          <p>
+
+            E-commerce marketing project focused on
+            improving product visibility, search traffic,
+            product-focused content and online customer
+            acquisition.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>E-Commerce SEO</span>
+            <span>Product SEO</span>
+            <span>Meta Ads</span>
+            <span>Content</span>
+            <span>Marketing</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://hisbenew.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 04 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            04 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-blender-phone"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            🛒 Shop Appliances
+          </h3>
+
+          <p>
+
+            E-commerce digital marketing project centered
+            around appliance products, search visibility,
+            product discovery and paid advertising
+            opportunities.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>E-Commerce</span>
+            <span>SEO</span>
+            <span>Google Ads</span>
+            <span>Product Marketing</span>
+            <span>PPC</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://www.shopappliances.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 05 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            05 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-hand-sparkles"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            ✨ First Scar Clinic
+          </h3>
+
+          <p>
+
+            Healthcare digital marketing project focused
+            on online visibility, local search, service
+            discovery, content and search advertising
+            for potential patients.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>Local SEO</span>
+            <span>Google Ads</span>
+            <span>Content</span>
+            <span>Healthcare Marketing</span>
+            <span>SEO</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://firstscarclinic.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 06 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            06 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-earth-americas"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            🌎 Connect Canada
+          </h3>
+
+          <p>
+
+            Digital marketing project for an immigration
+            consulting platform, focusing on search visibility,
+            informative content, keyword targeting and
+            potential customer acquisition.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>SEO</span>
+            <span>Content Marketing</span>
+            <span>Google Ads</span>
+            <span>Keyword Research</span>
+            <span>Lead Generation</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://www.connectcanada.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 07 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            07 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-truck-moving"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            🚚 Ben's Moving
+          </h3>
+
+          <p>
+
+            Local-service digital marketing project for
+            a moving company, with emphasis on local SEO,
+            service keywords, online visibility and
+            lead-generation opportunities.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>Local SEO</span>
+            <span>Google Ads</span>
+            <span>Lead Generation</span>
+            <span>Content</span>
+            <span>PPC</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://www.bensmoving.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 08 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            08 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-church"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            ⛪ Buckfast Abbey
+          </h3>
+
+          <p>
+
+            Digital marketing project for a major visitor
+            attraction, with focus on search visibility,
+            informative content, audience discovery and
+            strengthening the online presence.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>SEO</span>
+            <span>Content</span>
+            <span>Local Search</span>
+            <span>Digital Marketing</span>
+            <span>Analytics</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://www.buckfast.org.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 09 -->
+
+      <article class="project-card reveal">
+
+        <div class="project-image">
+
+          <span class="project-number">
+            09 / 09
+          </span>
+
+          <i class="project-icon fa-solid fa-car-side"></i>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <h3>
+            🚘 USA Limo Car
+          </h3>
+
+          <p>
+
+            Digital marketing project for a limousine and
+            transportation business, focused on local
+            search visibility, service-based keywords,
+            advertising and customer lead generation.
+
+          </p>
+
+
+          <div class="tags">
+
+            <span>Local SEO</span>
+            <span>Google Ads</span>
+            <span>PPC</span>
+            <span>Lead Generation</span>
+            <span>Content</span>
+
+          </div>
+
+
+          <div class="project-buttons">
+
+            <a
+              href="https://usalimocar.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+              View Website
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact-box reveal">
+
+      <h2>
+
+        Let's grow your business
+        <span class="gradient-name">
+          online.
+        </span>
+
+      </h2>
+
+
+      <p>
+
+        Have a business, campaign or marketing project
+        in mind? Let's build a strategy that improves
+        your online visibility and connects you with
+        the right audience.
+
+      </p>
+
+
+      <a
+        class="email-link"
+        href="mailto:mirzaabdullah8520@gmail.com"
+      >
+
+        <i class="fa-solid fa-envelope"></i>
+
+        mirzaabdullah8520@gmail.com
+
+      </a>
+
+
+      <div class="contact-buttons">
+
+        <a
+          href="https://wa.me/923207002101"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+          Contact on WhatsApp
+
+        </a>
+
+
+        <a
+          href="mailto:mirzaabdullah8520@gmail.com"
+          class="btn btn-secondary"
+        >
+
+          <i class="fa-solid fa-envelope"></i>
+
+          Send Email
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-content">
+
+      <div>
+
+        © 2026
+
+        <strong>
+          Muhammad Abdullah
+        </strong>.
+
+        Digital Marketing Specialist.
+
+      </div>
+
+
+      <div class="footer-socials">
+
+        <a
+          href="mailto:mirzaabdullah8520@gmail.com"
+          aria-label="Email"
+        >
+
+          <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+
+        <a
+          href="https://wa.me/923207002101"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+
+        <a
+          href="#projects"
+          aria-label="Projects"
+        >
+
+          <i class="fa-solid fa-bullhorn"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button
+  class="top-btn"
+  id="topBtn"
+  aria-label="Back to top"
+>
+
+  <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<script>
+
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+const header =
+  document.getElementById("header");
+
+const menuBtn =
+  document.getElementById("menuBtn");
+
+const navLinks =
+  document.getElementById("navLinks");
+
+const topBtn =
+  document.getElementById("topBtn");
+
+const cursorGlow =
+  document.querySelector(".cursor-glow");
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+menuBtn.addEventListener("click", () => {
+
+  navLinks.classList.toggle("open");
+
+  const icon
